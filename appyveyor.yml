@@ -3,7 +3,7 @@ image: Visual Studio 2019
 build_script:
 - ps: ./upload_test.ps1
 environment:
-  my_salt:
+  foo:
     secure: Gt222eUIsZ5ielYttHqFtbGj3UIXE2ryCEZCKZC7yqx2Ljfss45w7i9PBvQOHNc4eKw4R08/p0DdV/je2nvz7Q==
-  my_pass:
+  bar:
     secure: sTZ7CMUQck1QyYzxIORFlAhDZOofmrjstIiuwXqsjuc=
