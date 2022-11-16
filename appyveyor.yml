@@ -3,6 +3,7 @@ image: Visual Studio 2019
 build_script:
 - ps: iex ((New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/appveyor/secure-file/master/install.ps1'))
 - cmd: appveyor-tools\secure-file -decrypt mudmachine.ppk.enc -secret %my_pass% -salt %my_salt%
+- ps: Get-ChildItem
 - ps: ./upload_test.ps1
 environment:
   my_salt:
