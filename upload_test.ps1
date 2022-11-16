@@ -13,7 +13,7 @@
     Protocol = [WinSCP.Protocol]::Scp
     HostName = "mudlet.org"
     UserName = "mudmachine"
-    SshPrivateKeyPath = "$Env:SshSecretKey"
+    SshPrivateKeyPath = "${Env:APPVEYOR_BUILD_FOLDER}\mudmachine.ppk"
   }
   $session = New-Object WinSCP.Session
   $fingerprint =  $session.ScanFingerprint($sessionOptions, "SHA-256")
