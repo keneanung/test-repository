@@ -1,6 +1,6 @@
-write-host "${env:my_salt}"
+write-host "${env:foo}"
 iex ((New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/appveyor/secure-file/master/install.ps1'))
-.\appveyor-tools\secure-file -decrypt mudmachine.ppk.enc -secret "${Env:my_pass}" -salt "${Env:my_salt}"
+.\appveyor-tools\secure-file -decrypt mudmachine.ppk.enc -secret "${Env:bar}" -salt "${Env:foo}"
 Get-ChildItem
 
 # get winscp .NET dll for uploads
