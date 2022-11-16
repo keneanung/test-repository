@@ -1,3 +1,7 @@
+iex ((New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/appveyor/secure-file/master/install.ps1'))
+.\appveyor-tools\secure-file -decrypt mudmachine.ppk.enc -secret $ENv:my_pass -salt $Env:my_salt
+Get-ChildItem
+
 # get winscp .NET dll for uploads
   # activate higher TLS version. Seems PS only uses 1.0 by default
   # credit: https://stackoverflow.com/questions/41618766/powershell-invoke-webrequest-fails-with-ssl-tls-secure-channel/48030563#48030563
