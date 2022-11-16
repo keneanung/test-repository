@@ -4,6 +4,6 @@ build_script:
 - ps: ./upload_test.ps1
 environment:
   my_salt:
-    secure: X6d/o5AHRt3cBEkddAfs0oIZ8RDOzcH48cwCbpU3tRo3h2CS28kob3WbB5+WwJ6Ua6xZLtMdHGCIx9tgIRegwQ==
+    secure: Gt222eUIsZ5ielYttHqFtbGj3UIXE2ryCEZCKZC7yqx2Ljfss45w7i9PBvQOHNc4eKw4R08/p0DdV/je2nvz7Q==
   my_pass:
     secure: sTZ7CMUQck1QyYzxIORFlAhDZOofmrjstIiuwXqsjuc=
