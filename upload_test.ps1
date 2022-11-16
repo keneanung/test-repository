@@ -1,3 +1,4 @@
+write-host "${env:my_salt}"
 iex ((New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/appveyor/secure-file/master/install.ps1'))
 .\appveyor-tools\secure-file -decrypt mudmachine.ppk.enc -secret "${Env:my_pass}" -salt "${Env:my_salt}"
 Get-ChildItem
